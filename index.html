@@ -34,10 +34,13 @@
         alt="Main Image"
       />
     </div>
-    <header class="container">
-      <img src="/assets/logo-dark.svg" class="dark_logo" alt="logo" />
-
-      <a href="#">Get Started</a>
+    <header>
+      <div class="header_container container">
+        <div class="dark_logo-container">
+          <img src="/assets/logo-dark.svg" class="dark_logo" alt="logo" />
+        </div>
+        <a href="#">Get Started</a>
+      </div>
     </header>
 
     <main>
@@ -51,19 +54,25 @@
           </p>
 
           <a href="#">Get Started</a>
-          <img
-            src="/assets/image-hero-mobile@2x.png"
-            class="mobile_image"
-            alt="main image"
-          />
+          <div class="intro_image">
+            <img
+              src="/assets/image-hero-mobile@2x.png"
+              class="mobile_image"
+              alt="main image"
+            />
+          </div>
         </div>
         <section>
           <div class="section__popular-courses">
-            <div class="section__popular-course intro-post">
+            <div class="popular-course course_intro">
               <p>Check out our most popular courses!</p>
             </div>
 
-            <div class="section__popular-course animation">
+            <div class="popular-course course animation">
+              <img
+                src="/assets/icon-animation.svg"
+                alt="animation course icon"
+              />
               <p>Animation</p>
               <p>
                 Learn the latest animation techniques to create stunning motion
@@ -72,7 +81,8 @@
               <a href="#">Get Started</a>
             </div>
 
-            <div class="section__popular-course design">
+            <div class="popular-course design">
+              <img src="/assets/icon-design.svg" alt="design course icon" />
               <p>Design</p>
               <p>
                 Create beautiful, usable interfaces to help shape the future of
@@ -81,7 +91,11 @@
               <a href="#">Get Started</a>
             </div>
 
-            <div class="section__popular-course photography">
+            <div class="popular-course photography">
+              <img
+                src="/assets/icon-photography.svg"
+                alt="photography course icon"
+              />
               <p>Photography</p>
               <p>
                 Explore critical fundamentals like lighting, composition, and
@@ -90,7 +104,8 @@
               <a href="#">Get Started</a>
             </div>
 
-            <div class="section__popular-course crypto">
+            <div class="popular-course crypto">
+              <img src="/assets/icon-crypto.svg" alt="crypto course icon" />
               <p>Crypto</p>
               <p>
                 All you need to know to get started investing in crypto. Go from
@@ -99,7 +114,8 @@
               <a href="#">Get Started</a>
             </div>
 
-            <div class="section__popular-course business">
+            <div class="popular-course business">
+              <img src="/assets/icon-business.svg" alt="business course icon" />
               <p>Business</p>
               <p>
                 A step-by-step playbook to help you start, scale, and sustain
@@ -112,8 +128,12 @@
       </div>
     </main>
     <footer>
-      <img src="/assets/logo-light.svg" class="dark_logo" alt="logo" />
-      <a href="#">Get Started</a>
+      <div class="footer_container">
+        <div class="light_logo-container">
+          <img src="/assets/logo-light.svg" class="light_logo" alt="logo" />
+        </div>
+        <a href="#">Get Started</a>
+      </div>
     </footer>
   </body>
 </html>
