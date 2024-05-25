@@ -22,18 +22,7 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
-    <div class="main_image">
-      <img
-        src="/assets/image-hero-desktop.png"
-        class="desktop_image"
-        alt="Main Image"
-      />
-      <img
-        src="/assets/image-hero-tablet.png"
-        class="tablet_image"
-        alt="Main Image"
-      />
-    </div>
+    
     <header>
       <div class="header_container container">
         <div class="dark_logo-container">
@@ -45,6 +34,7 @@
 
     <main>
       <div class="main__container container">
+        <div class="main__content">
         <div class="main__intro">
           <h1>Maximize skill, minimize budget</h1>
 
@@ -54,6 +44,19 @@
           </p>
 
           <a href="#">Get Started</a>
+        </div>
+        <div class="table__image-container">
+            <img
+              src="/assets/image-hero-tablet.png"
+              class="tablet_image"
+              alt="main Image"
+            />
+          </div>
+
+          <div class="desktop__image-container">
+            <img src="/assets/image-hero-desktop.png" class="desktop__image" alt="main image">
+          </div>
+
           <div class="intro_image">
             <img
               src="/assets/image-hero-mobile@2x.png"
@@ -62,8 +65,9 @@
             />
           </div>
         </div>
+      </div>
         <section>
-          <div class="section__popular-courses">
+          <div class="section__popular-courses container">
             <div class="popular-course course_intro">
               <p>Check out our most popular courses!</p>
             </div>
