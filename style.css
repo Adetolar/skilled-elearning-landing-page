@@ -8,16 +8,11 @@
   --text-color: #83869a;
   --netural-color: #ffffff;
 
-  /* --:#F74780;
-    --:#FFA7C3; */
-
   --button-idle-1: var(--primary-color);
   --button-idle-2: linear-gradient(#f02aa6, #ff6f48);
   --button-idle-3: linear-gradient(#4851ff, #f02aa6);
 
   --button-hover-1: #666ca3;
-  /* --button-hover-2: 
-    --button-hover-3:  */
 }
 
 ::after,
@@ -32,17 +27,19 @@ body {
   font-size: 1rem;
   color: var(--text-color);
   background-color: #fcf9fb;
-  /* width: 100dvw;
-  height: 100dvh; */
 }
 
 img {
   max-width: 100%;
 }
 
-.desktop__image-container,
-.table__image-container {
-  display: none;
+.intro_image {
+  background-image: url(/assets/image-hero-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 300px;
+  margin-top: 20px;
 }
 
 .container {
@@ -70,6 +67,7 @@ header a {
 header a:hover {
   background-color: #666ca3;
 }
+
 .main__intro a {
   background-image: var(--button-idle-2);
   padding: 0.7em 1.3em;
@@ -78,10 +76,6 @@ header a:hover {
 
 .main__intro a:hover {
   opacity: 0.4;
-}
-
-.intro_image {
-  margin-top: 1.2em;
 }
 
 footer a {
@@ -118,6 +112,11 @@ h1 + p {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+.popular-course {
+  display: flex;
+  flex-direction: column;
 }
 
 .course_intro {
@@ -158,7 +157,9 @@ h1 + p {
   color: #f02aa6;
   font-weight: bolder;
   display: inline-block;
-  margin: 1.8em 0em;
+  /* margin: auto  0px; */
+  margin-top: auto;
+  margin-bottom: 30px;
 }
 
 .popular-course a:hover {
@@ -188,40 +189,57 @@ footer {
 
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
+    font-size: 0.85rem;
   }
 
+  .wrapper {
+    position: relative;
+    overflow-x: hidden;
+  }
   .main_image {
     display: block;
   }
 
-  .main__content {
-    /* display: flex; */
-    position: relative;
+  h1 {
+    font-weight: 900;
+    color: var(--primary-color);
+  }
+
+  h1 + p {
+    margin: 1.3em 0em;
+    line-height: 1.5;
+    font-size: 0.85rem;
   }
 
   .main__intro {
     width: 50%;
-    padding-top: 2rem;
   }
 
-  .table__image-container {
-    display: block;
+  .main__container {
+    min-height: 420px;
+    position: relative;
   }
 
-  .tablet_image {
+  .intro_image {
+    background-image: url(/assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    min-width: 400px;
+    min-height: 450px;
+    margin-top: 20px;
     position: absolute;
-    top: -10rem;
-    right: -20rem;
+    top: -130px;
+    right: -170px;
+    z-index: -1;
   }
 
-  .intro_image,
-  .desktop_image {
-    display: none;
+  .main__intro p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
   }
 
   .section__popular-courses {
-    margin: 15rem auto 0rem;
     padding: 1rem;
     flex-direction: row;
     flex-wrap: wrap;
@@ -237,23 +255,32 @@ footer {
   body {
     font-size: 1.2rem;
   }
+  .intro_image {
+    background-image: url(/assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-width: 750px;
+    min-height: 600px;
+    margin-top: 20px;
+    position: absolute;
+    top: -220px;
+    right: -310px;
+    z-index: -1;
+  }
+
   .main__intro {
-    width: 38%;
+    width: 40%;
     margin-top: 3em;
   }
 
   .main__content {
-    margin-bottom: 15em;
+    margin-bottom: 12em;
   }
 
   .container {
     width: 85%;
     margin: 1.5em auto;
-  }
-
-  .intro_image,
-  .tablet_image {
-    display: none;
   }
 
   h1 {
@@ -286,12 +313,6 @@ footer {
     display: block;
   }
 
-  .desktop__image {
-    position: absolute;
-    top: -15rem;
-    right: -25rem;
-    z-index: -1;
-  }
   .header_container,
   .footer_container {
     width: 85%;
